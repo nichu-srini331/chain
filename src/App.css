@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.cls{
+  margin-left: 20px !important;
+}
+input{
+  width: 350px !important;
+}

@@ -1,0 +1,23 @@
+
+Note : The below Code need to be coded in the Solidity  IDE Remix: 
+
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract SimpleStorage {
+
+    string public storeddata;
+
+    event MyeventTest(string eventOutput);
+
+    function set(string memory myTxt) public {
+        storeddata = myTxt;
+        emit MyeventTest(myTxt);
+    }
+
+    function get() public view returns (string memory){
+        return storeddata;
+    }
+
+
+}
